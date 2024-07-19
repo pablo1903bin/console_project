@@ -11,7 +11,7 @@ class UsuarioServiceImpl implements UserService {
   crearUsuario() async {
     UsuarioDTO userInput = ConsoleInputAdapter().llenarUsuario();
     try {
-      await createusers.crearUsuarios(userInput);
+      await createusers.requestUsers(userInput);
       mitimer.Loading().cancel();
       stdout.write('\b');
     } catch (e) {

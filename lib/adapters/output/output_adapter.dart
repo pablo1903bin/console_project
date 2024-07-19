@@ -24,4 +24,8 @@ class OutputConsoleAdapter {
     stdout.writeln();
     print('USUARIO O CORREO NO ESTAN DISPONIBLES');
   }
+
+  static void msjSalida(String msj) {
+    print(msj);
+  }
 }
