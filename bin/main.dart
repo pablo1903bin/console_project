@@ -1,6 +1,8 @@
-import 'package:app/core/servicesimpl/usuario_services_impl.dart';
+import 'package:app/POO/constructores/arbol.dart';
 
-void main(List<String> args) async {
-  UsuarioServiceImpl userService = UsuarioServiceImpl();
-  userService.crearUsuario();
+void main(List<String> args) {
+  Arbol durazno = Arbol();
+  durazno.frutal = false;
+  durazno.esFrutal;
+  print(durazno.toString());
 }
